@@ -13,18 +13,19 @@ This project was developed and tested using Python 3.9+. It is recommended to ru
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/saiviswasb/CV-HW3-Instance-Segmentation.git](https://github.com/YOUR_USERNAME/CV-HW3-Instance-Segmentation.git)
+   git clone [https://github.com/saiviswasb/CV-HW3-Instance-Segmentation.git](https://github.com/saiviswasb/CV-HW3-Instance-Segmentation.git)
    cd CV-HW3-Instance-Segmentation
 2. Install the required dependencies:
    pip install torch torchvision numpy opencv-python pycocotools matplotlib seaborn
 
-Usage
-Ensure that the dataset is extracted and placed in a folder named hw3-data-release in the same directory as the script.
+## Usage
+Ensure that the dataset is extracted and placed in a folder named `hw3-data-release` in the same directory as the script.
 
-Training, Inference, and Evaluation
-The main.py script is modularized to handle the entire pipeline end-to-end. Running the script will automatically train the model for 20 epochs, generate the test-results.json required for CodaBench, and run the additional experiments.
- '''bash
-  python main.py
+### Training, Inference, and Evaluation
+The `main.py` script is modularized to handle the entire pipeline end-to-end. Running the script will automatically train the model for 20 epochs, generate the `test-results.json` required for CodaBench, and run the additional experiments.
+
+```bash
+python main.py
 
 Outputs:
 Upon completion, the script will create an ./outputs/ directory containing:
